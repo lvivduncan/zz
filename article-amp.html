@@ -95,6 +95,7 @@
 				background: var(--white);
 				color: var(--color);
 				line-height: 1.3;
+				/* font-size: 17px; */
 				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
 					Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
 					"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -355,6 +356,7 @@
 			section article h1 {
 				font-weight: 400;
 				margin: 0 0 10px;
+				font-size: 18px;
 			}
 			section article a {
 				color: var(--color);
@@ -366,6 +368,83 @@
 				padding: 1px 8px;
 				line-height: 18px;
 				font-size: 12px;
+			}
+			/* witout image */
+			section.news h2 {
+				font-size: 14px;
+				font-weight: 400;
+				color: var(--gray);
+				height: 41px;
+				line-height: 41px;
+				margin: 0 0 15px;
+			}
+			section.news article {
+				display: grid;
+				grid-template-columns: 50px 1fr;
+				gap: 10px;
+				position: relative;
+			}
+			section.news article::after {
+				content: "";
+				position: absolute;
+				bottom: -3px;
+				left: 50px;
+				right: 10px;
+				height: 1px;
+				background: var(--light);
+			}
+			section.news article time {
+				align-self: flex-start;
+			}
+			section.news article.strong h1 a {
+				font-weight: 600;
+				display: block;
+			}
+			section.news article.strong time {
+				background: var(--cyan);
+				color: var(--white);
+			}
+			.read-more {
+				display: block;
+				margin: 0 0 0 50px;
+				text-decoration: underline;
+			}
+			footer {
+				background: var(--light);
+				padding: 20px;
+				text-align: center;
+			}
+			footer > a {
+				display: block;
+				margin: 0 0 20px;
+			}
+			footer ul {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 15px;
+				margin: 15px 0;
+			}
+			footer li {
+				display: block;
+			}
+			footer li a {
+				font-size: 16px;
+				line-height: 24px;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: #666;
+			}
+			footer p {
+				margin: 0 0 10px;
+			}
+			footer small {
+				font-size: 14px;
+				display: block;
+				color: var(--gray);
+			}
+			#copy {
+				margin: 15px;
 			}
 		</style>
 	</head>
@@ -383,7 +462,7 @@
 			</a>
 			<label>
 				<input type="checkbox" id="search" />
-				<form>
+				<form action="#">
 					<input type="text" placeholder="Пошук по сайту" />
 					<button>search</button>
 				</form>
@@ -679,6 +758,172 @@
 			</article>
 		</section>
 
-		<div style="height: 2000px"></div>
+		<section class="news">
+			<h1>Останні новини</h1>
+			<h2>П’ятниця, 18 Лютого 2022</h2>
+			<article>
+				<time>13:00</time>
+				<h1>
+					<a
+						href="//zz.te.ua/u-ternopoli-vshanuvaly-pam-iat-viys-kovoho-zhurnalista-kotryy-zahynuv-u-boiakh-za-debal-tseve/"
+						>У Тернополі вшанували пам’ять військового журналіста,
+						котрий загинув у боях за Дебальцеве</a
+					>
+				</h1>
+			</article>
+			<article class="strong">
+				<time>13:00</time>
+				<h1>
+					<a
+						href="//zz.te.ua/u-ternopoli-vshanuvaly-pam-iat-viys-kovoho-zhurnalista-kotryy-zahynuv-u-boiakh-za-debal-tseve/"
+						>У Тернополі вшанували пам’ять військового журналіста,
+						котрий загинув у боях за Дебальцеве</a
+					>
+				</h1>
+			</article>
+			<article>
+				<time>13:00</time>
+				<h1>
+					<a
+						href="//zz.te.ua/u-ternopoli-vshanuvaly-pam-iat-viys-kovoho-zhurnalista-kotryy-zahynuv-u-boiakh-za-debal-tseve/"
+						>У Тернополі вшанували пам’ять військового журналіста,
+						котрий загинув у боях за Дебальцеве</a
+					>
+				</h1>
+			</article>
+			<article class="strong">
+				<time>13:00</time>
+				<h1>
+					<a
+						href="//zz.te.ua/u-ternopoli-vshanuvaly-pam-iat-viys-kovoho-zhurnalista-kotryy-zahynuv-u-boiakh-za-debal-tseve/"
+						>У Тернополі вшанували пам’ять військового журналіста,
+						котрий загинув у боях за Дебальцеве</a
+					>
+				</h1>
+			</article>
+			<article>
+				<time>13:00</time>
+				<h1>
+					<a
+						href="//zz.te.ua/u-ternopoli-vshanuvaly-pam-iat-viys-kovoho-zhurnalista-kotryy-zahynuv-u-boiakh-za-debal-tseve/"
+						>У Тернополі вшанували пам’ять військового журналіста,
+						котрий загинув у боях за Дебальцеве</a
+					>
+				</h1>
+			</article>
+			<article class="strong">
+				<time>13:00</time>
+				<h1>
+					<a
+						href="//zz.te.ua/u-ternopoli-vshanuvaly-pam-iat-viys-kovoho-zhurnalista-kotryy-zahynuv-u-boiakh-za-debal-tseve/"
+						>У Тернополі вшанували пам’ять військового журналіста,
+						котрий загинув у боях за Дебальцеве</a
+					>
+				</h1>
+			</article>
+			<a href="#" class="read-more">Більше новин</a>
+		</section>
+
+		<section class="news">
+			<h1>Новини</h1>
+			<h2>П’ятниця, 18 Лютого 2022</h2>
+			<article>
+				<time>13:00</time>
+				<h1>
+					<a
+						href="//zz.te.ua/u-ternopoli-vshanuvaly-pam-iat-viys-kovoho-zhurnalista-kotryy-zahynuv-u-boiakh-za-debal-tseve/"
+						>У Тернополі вшанували пам’ять військового журналіста,
+						котрий загинув у боях за Дебальцеве</a
+					>
+				</h1>
+			</article>
+			<article class="strong">
+				<time>13:00</time>
+				<h1>
+					<a
+						href="//zz.te.ua/u-ternopoli-vshanuvaly-pam-iat-viys-kovoho-zhurnalista-kotryy-zahynuv-u-boiakh-za-debal-tseve/"
+						>У Тернополі вшанували пам’ять військового журналіста,
+						котрий загинув у боях за Дебальцеве</a
+					>
+				</h1>
+			</article>
+			<article>
+				<time>13:00</time>
+				<h1>
+					<a
+						href="//zz.te.ua/u-ternopoli-vshanuvaly-pam-iat-viys-kovoho-zhurnalista-kotryy-zahynuv-u-boiakh-za-debal-tseve/"
+						>У Тернополі вшанували пам’ять військового журналіста,
+						котрий загинув у боях за Дебальцеве</a
+					>
+				</h1>
+			</article>
+			<article class="strong">
+				<time>13:00</time>
+				<h1>
+					<a
+						href="//zz.te.ua/u-ternopoli-vshanuvaly-pam-iat-viys-kovoho-zhurnalista-kotryy-zahynuv-u-boiakh-za-debal-tseve/"
+						>У Тернополі вшанували пам’ять військового журналіста,
+						котрий загинув у боях за Дебальцеве</a
+					>
+				</h1>
+			</article>
+			<article>
+				<time>13:00</time>
+				<h1>
+					<a
+						href="//zz.te.ua/u-ternopoli-vshanuvaly-pam-iat-viys-kovoho-zhurnalista-kotryy-zahynuv-u-boiakh-za-debal-tseve/"
+						>У Тернополі вшанували пам’ять військового журналіста,
+						котрий загинув у боях за Дебальцеве</a
+					>
+				</h1>
+			</article>
+			<article class="strong">
+				<time>13:00</time>
+				<h1>
+					<a
+						href="//zz.te.ua/u-ternopoli-vshanuvaly-pam-iat-viys-kovoho-zhurnalista-kotryy-zahynuv-u-boiakh-za-debal-tseve/"
+						>У Тернополі вшанували пам’ять військового журналіста,
+						котрий загинув у боях за Дебальцеве</a
+					>
+				</h1>
+			</article>
+			<a href="#" class="read-more">Більше новин</a>
+		</section>
+
+		<footer>
+			<a href="/">
+				<amp-img
+					src="images/logo-footer.png"
+					width="229"
+					height="67"
+					layout="responsive"
+					alt="на головну"
+				></amp-img>
+			</a>
+			<ul>
+				<li><a href="#">Головна</a></li>
+				<li><a href="#">Новини</a></li>
+				<li><a href="#">Поліс</a></li>
+				<li><a href="#">Статті</a></li>
+				<li><a href="#">Соцмережі</a></li>
+				<li><a href="#">Контакти</a></li>
+			</ul>
+			<p>© 2000-2022 "За Збручем"</p>
+			<small
+				>Передрук матеріалів тільки за наявності гіперпосилання на
+				www.zz.te.ua
+			</small>
+		</footer>
+		<div id="copy">
+			<p>
+				Розробка сайту:
+				<a
+					href="//lvivport.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					>lvivport</a
+				>
+			</p>
+		</div>
 	</body>
 </html>
