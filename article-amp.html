@@ -325,6 +325,36 @@
 			main p {
 				margin: 0 0 20px;
 			}
+			.tags-list {
+				display: flex;
+				font-weight: 500;
+				margin-bottom: 35px;
+				flex-wrap: wrap;
+			}
+			.tags-list span {
+				color: var(--cyan);
+				margin-right: 5px;
+			}
+			.tags-list a {
+				display: block;
+				position: relative;
+				padding-left: 24px;
+				margin-right: 10px;
+				margin-bottom: 5px;
+			}
+			.tags-list a:before {
+				content: "#";
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 20px;
+				height: 20px;
+				background: var(--orange);
+				color: var(--cyan);
+				border-radius: 50%;
+				text-align: center;
+			}
 			section {
 				margin: 15px;
 				position: relative;
@@ -664,6 +694,13 @@
 					height="645"
 				></amp-img>
 			</figure>
+
+			<div class="tags-list">
+				<span>Теги:</span>
+				<a href="#" rel="tag">азартні ігри</a
+				><a href="#" rel="tag">новини</a
+				><a href="#" rel="tag">онлайн-казино</a>
+			</div>
 		</main>
 
 		<section>
